@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	FILE *file;
 	char buffer[1024];
-	unsigned long long int a, b, c;
+	size_t a, b, c;
  
 	if (argc != 2)
 	{
@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 		a = strtoull(buffer, NULL, 10);
 		b = divider(a, 2);
 		c = a / b;
-		printf("%llu=%llu*%llu\n", a, c, b);
+		printf("%lu=%lu*%lu\n", a, c, b);
 	}
 	fclose(file);
 	return (0);

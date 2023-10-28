@@ -3,8 +3,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stddef.h>
 
-unsigned long long int divider(unsigned long long int a, unsigned long long int i);
-unsigned long long int IsPrime(unsigned long long int n);
+size_t divider(size_t a, size_t i);
+size_t IsPrime(size_t n);
 
 #endif
